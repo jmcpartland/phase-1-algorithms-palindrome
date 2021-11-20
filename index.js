@@ -1,6 +1,12 @@
 function isPalindrome(word) {
   // Write your algorithm here
-}
+  let revWord = word.split('').reverse().join("");
+  if (word === revWord) {
+    return true;
+  } else {
+    return false;
+  }
+};
 
 /* 
   Add your pseudocode here
@@ -8,6 +14,11 @@ function isPalindrome(word) {
 
 /*
   Add written explanation of your solution here
+
+  recieve input
+  determine if input is a palindrome
+  return true or false
+
 */
 
 // You can run `node index.js` to view these console logs
